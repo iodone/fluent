@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+docker pull ${harbor_url}:${cur_tag} > /dev/null
+
+docker kill ${project_name} > /dev/null 2>&1 || true
+docker rm ${project_name} > /dev/null 2>&1 || true
+sleep 3
+
+echo deploy using docker image: ${harbor_url}:${cur_tag}
+
+if [ "${migration}" == "true" ]; then
+        docker run -it ${project_name}:${cur_tag} sh /root/app/${project_name}/bin/app.sh migrate
+        echo "migration finished"
+fi
+
+docker run -d --name ${project_name} ${docker_options} -v ${WORKSPACE}/${project_name}-${cur_tag}/var/log:/root/app/${project_name}/var/log --restart=unless-stopped ${harbor_url}:${cur_tag}
+
+docker rmi -f ${harbor_url}:${cur_tag} > /dev/null 2>&1
+
+if [ $? == 0 ]; then
+        echo "delete old images"
+else
+        echo "nothing to delete"
+fi

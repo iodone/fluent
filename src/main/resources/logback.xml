@@ -1,0 +1,31 @@
+<configuration>
+<!--    <contextName>logback-mdc-ttl</contextName>-->
+
+    <property scope="context" name="CHARSET" value="utf-8"/>
+    <property scope="context" name="APP_PATTERN"
+              value="%date [%thread] [%X{requestId}] %-5level %logger{80}.%M - %msg%n"/>
+
+<!--    <contextListener class="com.ofpay.logback.TtlMdcListener"/>-->
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${APP_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="app" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log_dir:-.}/var/log/app.log.%d{yyyy-MM-dd}</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+<!--            <pattern>%date [%thread] [%X{requestId}] %-5level %logger{80}.%M - %msg%n</pattern>-->
+            <pattern>${APP_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="console"/>
+        <appender-ref ref="app"/>
+    </root>
+
+</configuration>

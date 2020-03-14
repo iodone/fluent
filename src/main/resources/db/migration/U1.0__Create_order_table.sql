@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS `item_t`
+
+DROP TABLE IF EXISTS `order_t`
+

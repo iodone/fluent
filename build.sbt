@@ -1,0 +1,175 @@
+
+
+name := "fluent"
+version := "0.0.1"
+
+scalaVersion := "2.12.7"
+
+// for scala
+libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-actor" % "2.5.17",
+  "com.typesafe.akka" %% "akka-testkit" % "2.5.17" % Test,
+  "com.typesafe.akka" %% "akka-http" % "10.1.5",
+  "com.typesafe.akka" %% "akka-stream" % "2.5.17",
+  "com.typesafe.akka" %% "akka-http-testkit" % "10.1.5" % Test,
+  "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+  "com.typesafe.akka" %% "akka-stream-testkit" % "2.5.17" % Test,
+
+  // SQL generator
+//  "com.typesafe.slick" %% "slick" % "3.2.3",
+//  "io.underscore" %% "slickless" % "0.3.2",
+
+  // quill for sql
+  "io.getquill" %% "quill-jdbc" % "3.4.10",
+
+
+  // Config file parser
+  "com.github.pureconfig" %% "pureconfig" % "0.9.2",
+
+  // JSON serialization library
+  "io.circe" %% "circe-core" % "0.10.0",
+  "io.circe" %% "circe-generic" % "0.10.0",
+  "io.circe" %% "circe-parser" % "0.10.0",
+  "io.circe" %% "circe-optics" % "0.10.0",
+
+  // Sugar for serialization and deserialization in akka-http with circe
+  "de.heikoseeberger" %% "akka-http-circe" % "1.20.1",
+
+  // Validation library
+  "com.wix" %% "accord-core" % "0.7.2",
+
+  // Use for logging
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0",
+
+  // For validation
+  //"org.squbs" %% "squbs-pattern" % "0.11.0",
+  "com.wix" %% "accord-core" % "0.7.2",
+
+  // For http client
+  "com.softwaremill.sttp" %% "core" % "1.4.2",
+  "com.softwaremill.sttp" %% "akka-http-backend" % "1.4.2",
+  "com.softwaremill.sttp" %% "circe" % "1.4.2",
+
+  // For scala DI
+  "com.softwaremill.macwire" %% "macros" % "2.3.3",
+
+
+  // scala-async
+  "org.scala-lang.modules" %% "scala-async" % "0.9.7",
+
+  "org.scalamock" %% "scalamock" % "4.1.0" % Test,
+  "net.codingwell" %% "scala-guice" % "4.2.3"
+
+)
+
+// for java
+libraryDependencies ++= Seq(
+
+  // Migration for SQL databases
+  "org.flywaydb" % "flyway-core" % "5.2.1",
+
+  // Connection pool for database
+  "com.zaxxer" % "HikariCP" % "3.1.0",
+
+  // msql driver
+  "mysql" % "mysql-connector-java" % "5.1.22",
+
+  // Mock for test
+  "org.mockito" % "mockito-all" % "1.9.5" % Test,
+
+  // "ch.qos.logback" % "logback-classic" % "1.2.3"
+  "ch.qos.logback" % "logback-classic" % "1.2.3",
+
+  // 文件上传
+  "commons-io" % "commons-io" % "2.6",
+
+  // for trace id
+  "com.ofpay" % "logback-mdc-ttl" % "1.0.2",
+  "com.alibaba" % "transmittable-thread-local" % "2.11.4"
+)
+
+excludeDependencies ++= Seq(
+  // commons-logging is replaced by jcl-over-slf4j
+  ExclusionRule("org.slf4j", "slf4j-log4j12")
+)
+
+// assembly
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case "reference.conf" => MergeStrategy.concat
+  case x => MergeStrategy.first
+}
+
+test in assembly := {}
+
+assemblyJarName in assembly := s"$name.jar"
+
+excludeFilter in unmanagedResources := {
+  val resource = ((resourceDirectory in Compile).value).getCanonicalPath
+  new SimpleFileFilter(_.getCanonicalPath startsWith resource)
+}
+
+// scala package
+enablePlugins(UniversalPlugin)
+
+packageXzTarball := (baseDirectory in Compile).value / "output" / (name.value + ".tgz")
+packageName in Universal := name.value
+
+// add config
+mappings in Universal := {
+  val universalMappings = (mappings in Universal).value
+
+  val confFile = buildEnv.value match {
+    case BuildEnv.Developement => "application.conf"
+    case BuildEnv.Test => "resources-test/application-test.conf"
+    case BuildEnv.Production => "resources-prod/application-prod.conf"
+  }
+  val resourcesPath = (resourceDirectory in Compile).value
+
+  val envPath = buildEnv.value match {
+    case BuildEnv.Test => "resources-test"
+    case BuildEnv.Production => "resources-prod"
+    case _ => ""
+  }
+
+  val otherMappings = universalMappings :+ (resourcesPath / confFile) ->
+    // main config file of application
+    "config/application.conf" :+
+    // add other config
+    (resourcesPath / "logback.xml") -> "config/logback.xml" :+
+    (resourcesPath / "supervisor.conf") -> "config/supervisor.conf" :+
+    // add dockfile
+    (resourcesPath / "Dockerfile") -> "Dockerfile" :+
+    // add bin file
+    (resourcesPath / "bin" / "app.sh") -> "bin/app.sh"
+    // here, add other file based on different env using envPath
+
+  import Path.relativeTo
+
+  // add migration config files
+  val migrationPath = (resourcesPath / "db" / "migration")
+  //  import Path.relativeTo
+  val migrationFinder = (migrationPath ** "*") filter { !_.isDirectory }
+  val migrationMappings = (migrationFinder.get pair relativeTo(migrationPath.getParentFile)) map {
+    case (file, path) => (file, s"migrate/db/${path}")
+  }
+  otherMappings ++ migrationMappings
+}
+
+// add jar
+mappings in Universal := {
+  // universalMappings: Seq[(File,String)]
+  val universalMappings = (mappings in Universal).value
+  val fatJar = (assembly in Compile).value
+  // removing means filtering
+  val filtered = universalMappings filter {
+    case (file, name) =>  ! name.endsWith(".jar")
+  }
+  // add the fat jar
+  filtered :+ (fatJar -> ("lib/" + fatJar.getName))
+}
+
+// the bash scripts classpath only needs the fat jar
+
+scriptClasspath := Seq( (assemblyJarName in assembly).value )
+

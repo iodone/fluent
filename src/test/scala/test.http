@@ -1,0 +1,44 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+## sava order
+POST /api/v1/test HTTP/1.1
+Host: localhost:9002
+Content-Type: application/json
+
+{
+    "id": 996,
+    "items": [{"id": 1, "name": "foo"}, {"id": 2, "name": "bar"}]
+}
+
+### sava order
+POST /api/v1/order/save HTTP/1.1
+Host: localhost:9002
+Content-Type: application/json
+
+{
+    "id": 135,
+    "items": [{"id": 1, "name": "foo"}, {"id": 2, "name": "bar"}]
+}
+
+###
+GET /healthcheck HTTP/1.1
+Host: localhost:9002
+Content-Type: application/json
+
+###
+POST /api/v1 HTTP/1.1
+Host: localhost:9002
+Content-Type: application/json
+
+{
+    "hello": "fluent"
+}
+
+###
+
+
