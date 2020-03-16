@@ -1,15 +1,13 @@
 <configuration>
-<!--    <contextName>logback-mdc-ttl</contextName>-->
 
-    <property scope="context" name="CHARSET" value="utf-8"/>
-    <property scope="context" name="APP_PATTERN"
-              value="%date [%thread] [%X{requestId}] %-5level %logger{80}.%M - %msg%n"/>
-
-<!--    <contextListener class="com.ofpay.logback.TtlMdcListener"/>-->
+    <conversionRule conversionWord="traceID" converterClass="kamon.instrumentation.logback.tools.TraceIDConverter" />
+    <conversionRule conversionWord="spanID" converterClass="kamon.instrumentation.logback.tools.SpanIDConverter" />
+    <conversionRule conversionWord="contextTag" converterClass="kamon.instrumentation.logback.tools.ContextTagConverter" />
+    <conversionRule conversionWord="contextEntry" converterClass="kamon.instrumentation.logback.tools.ContextEntryConverter" />
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>${APP_PATTERN}</pattern>
+            <pattern> %date [%traceID] [%spanID] [%thread] %-5level %logger{80}.%M - %msg%n </pattern>
         </encoder>
     </appender>
 
@@ -18,8 +16,7 @@
             <fileNamePattern>${log_dir:-.}/var/log/app.log.%d{yyyy-MM-dd}</fileNamePattern>
         </rollingPolicy>
         <encoder>
-<!--            <pattern>%date [%thread] [%X{requestId}] %-5level %logger{80}.%M - %msg%n</pattern>-->
-            <pattern>${APP_PATTERN}</pattern>
+            <pattern>%date [%traceID] [%spanID] [%thread] %-5level %logger{80}.%M - %msg%n</pattern>
         </encoder>
     </appender>
 

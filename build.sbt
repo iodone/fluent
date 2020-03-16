@@ -7,13 +7,13 @@ scalaVersion := "2.12.7"
 
 // for scala
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-actor" % "2.5.17",
-  "com.typesafe.akka" %% "akka-testkit" % "2.5.17" % Test,
-  "com.typesafe.akka" %% "akka-http" % "10.1.5",
-  "com.typesafe.akka" %% "akka-stream" % "2.5.17",
-  "com.typesafe.akka" %% "akka-http-testkit" % "10.1.5" % Test,
+  "com.typesafe.akka" %% "akka-actor" % "2.5.26",
+  "com.typesafe.akka" %% "akka-testkit" % "2.5.26" % Test,
+  "com.typesafe.akka" %% "akka-http" % "10.1.11",
+  "com.typesafe.akka" %% "akka-stream" % "2.5.26",
+  "com.typesafe.akka" %% "akka-http-testkit" % "10.1.11" % Test,
   "org.scalatest" %% "scalatest" % "3.0.5" % Test,
-  "com.typesafe.akka" %% "akka-stream-testkit" % "2.5.17" % Test,
+  "com.typesafe.akka" %% "akka-stream-testkit" % "2.5.26" % Test,
 
   // SQL generator
 //  "com.typesafe.slick" %% "slick" % "3.2.3",
@@ -58,7 +58,11 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-async" % "0.9.7",
 
   "org.scalamock" %% "scalamock" % "4.1.0" % Test,
-  "net.codingwell" %% "scala-guice" % "4.2.3"
+  "net.codingwell" %% "scala-guice" % "4.2.3",
+
+  // kamon for monitor
+  "io.kamon" %% "kamon-bundle" % "2.0.6",
+  "io.kamon" %% "kamon-logback" % "2.0.2"
 
 )
 
@@ -85,7 +89,9 @@ libraryDependencies ++= Seq(
 
   // for trace id
   "com.ofpay" % "logback-mdc-ttl" % "1.0.2",
-  "com.alibaba" % "transmittable-thread-local" % "2.11.4"
+  "com.alibaba" % "transmittable-thread-local" % "2.11.4",
+
+  "net.bytebuddy" % "byte-buddy-parent" % "1.9.12" pomOnly()
 )
 
 excludeDependencies ++= Seq(

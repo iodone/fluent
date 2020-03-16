@@ -8,6 +8,8 @@ import akka.actor.ActorSystem
 import core.Fluent
 import common.Config
 import common.db.DatabaseMigration
+import kamon.Kamon
+
 
 
 import app.demo.delivery.http.HttpDelivery
@@ -16,6 +18,7 @@ import app.demo.delivery.http.HandlerDelivery
 object Demo {
 
   def main(args: Array[String]): Unit = {
+    Kamon.init()
 
     val actorSystem = ActorSystem("Demo-App")
 
