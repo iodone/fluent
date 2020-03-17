@@ -62,7 +62,8 @@ libraryDependencies ++= Seq(
 
   // kamon for monitor
   "io.kamon" %% "kamon-bundle" % "2.0.6",
-  "io.kamon" %% "kamon-logback" % "2.0.2"
+  "io.kamon" %% "kamon-logback" % "2.0.2",
+  "io.kamon" %% "kamon-prometheus" % "2.0.1"
 
 )
 
