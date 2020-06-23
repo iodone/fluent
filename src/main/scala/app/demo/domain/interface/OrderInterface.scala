@@ -1,5 +1,8 @@
 package app.demo.domain.interface
 
+import app.demo.domain.Entity._
+
+import scala.concurrent.Future
 
 trait OrderRepositry {
   def save(order: OrderSchema): Future[Id]

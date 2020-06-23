@@ -1,7 +1,7 @@
 
 
 name := "fluent"
-version := "0.0.1"
+version := "0.1.0"
 
 scalaVersion := "2.12.7"
 
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
 
 
   // Config file parser
-  "com.github.pureconfig" %% "pureconfig" % "0.9.2",
+  "com.github.pureconfig" %% "pureconfig" % "0.12.3",
 
   // JSON serialization library
   "io.circe" %% "circe-core" % "0.10.0",
@@ -61,9 +61,9 @@ libraryDependencies ++= Seq(
   "net.codingwell" %% "scala-guice" % "4.2.3",
 
   // kamon for monitor
-  "io.kamon" %% "kamon-bundle" % "2.0.6",
-  "io.kamon" %% "kamon-logback" % "2.0.2",
-  "io.kamon" %% "kamon-prometheus" % "2.0.1"
+  "io.kamon" %% "kamon-bundle" % "2.1.0",
+  "io.kamon" %% "kamon-logback" % "2.1.0",
+  "io.kamon" %% "kamon-prometheus" % "2.1.0"
 
 )
 
@@ -74,7 +74,7 @@ libraryDependencies ++= Seq(
   "org.flywaydb" % "flyway-core" % "5.2.1",
 
   // Connection pool for database
-  "com.zaxxer" % "HikariCP" % "3.1.0",
+  "com.zaxxer" % "HikariCP" % "3.4.1",
 
   // msql driver
   "mysql" % "mysql-connector-java" % "5.1.22",

@@ -1,7 +1,6 @@
-package app.demo.repositry
+package common.storage
 
-import common.Config
-import common.db.DatabaseConnector
+import common.database.Database.mysqlDb
 import core.Storage
 import io.getquill.{MysqlJdbcContext, SnakeCase}
 
@@ -9,9 +8,6 @@ import io.getquill.{MysqlJdbcContext, SnakeCase}
   * Created by iodone on {19-11-26}.
   */
 
-private[repositry] trait QuillStorage extends Storage {
-
-  val databaseConnector: DatabaseConnector = DatabaseConnector.getOrCreate(Config.conf.fluent.database)
-  val dbContext = new MysqlJdbcContext(SnakeCase, databaseConnector.datasource)
-
+trait QuillStorage extends Storage {
+  val dbContext = new MysqlJdbcContext(SnakeCase, mysqlDb.datasource)
 }

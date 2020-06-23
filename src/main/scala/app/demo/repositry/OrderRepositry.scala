@@ -4,18 +4,16 @@ package app.demo.repositry
   * Created by iodone on {18-11-12}.
   */
 
-import app.demo.domain.entity.SchemaEntity._
+import app.demo.domain.Entity._
 import app.demo.domain.interface._
-
+import common.storage.QuillStorage
 import com.typesafe.scalalogging.LazyLogging
-import core.Repository
 
 import scala.concurrent.{ExecutionContext, Future}
 import io.getquill._
 
 
 trait OrderStorage extends QuillStorage {
-  
   import dbContext._
 
   val ordersT = quote {
@@ -32,11 +30,10 @@ trait OrderStorage extends QuillStorage {
 }
 
 
-
 case class OrderRepositryImp(implicit ec: ExecutionContext) extends OrderRepositry with OrderStorage with LazyLogging {
 
-
   import dbContext._
+
   // insert into a table with auto_increment primary key
   def save(order: OrderSchema): Future[Id] = Future {
     val a = quote {
@@ -69,10 +66,10 @@ case class OrderRepositryImp(implicit ec: ExecutionContext) extends OrderReposit
 
 }
 
-case class MemoryOrderRepo(implicit ec: ExecutionContext) extends OrderRepositry {
-    def save(order: OrderSchema): Future[Id] = ???
-    def getOrder(id: Id): Future[Option[OrderSchema]] = ???
-    def fetchItem(id: Id): Future[Option[ItemSchema]] = ???
-    def save(items: List[ItemSchema]): Future[List[Id]] = ???
+case class MemoryOrderRepositry(implicit ec: ExecutionContext) extends OrderRepositry {
+  def save(order: OrderSchema): Future[Id] = ???
+  def getOrder(id: Id): Future[Option[OrderSchema]] = ???
+  def fetchItem(id: Id): Future[Option[ItemSchema]] = ???
+  def save(items: List[ItemSchema]): Future[List[Id]] = ???
 }
 

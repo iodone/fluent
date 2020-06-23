@@ -4,11 +4,11 @@ package common.db
   * Created by iodone on {18-11-1}.
   */
 import org.flywaydb.core.Flyway
-import common.DatabaseConfig
+import common.DbConfig
 
-case class DatabaseMigration(config: DatabaseConfig) {
+case class DatabaseMigration(config: DbConfig) {
 
-  private val flyway = Flyway.configure().dataSource(config.jdbcUrl, config.username, config.password).load()
+  private val flyway = Flyway.configure().dataSource(config.url, config.user, config.password).load()
 
   def migrate = flyway.migrate()
 

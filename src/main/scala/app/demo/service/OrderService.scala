@@ -6,12 +6,11 @@ package app.demo.service
 
 import scala.concurrent.{Future, ExecutionContext}
 
-import app.demo.domain.entity.RequestEntity._
-import app.demo.domain.entity.SchemaEntity._
-import app.demo.repositry.OrderRepositry
+import app.demo.domain.Entity._
+import app.demo.domain.interface._
 import core.Service
 
-class OrderService(orderRepo: OrderRepositry)(implicit ec: ExecutionContext) extends Service {
+class OrderServiceImp(orderRepo: OrderRepositry)(implicit ec: ExecutionContext) extends OrderService with Service {
 
   def saveOrder(orderId: Id, items: List[Item]): Future[Id] = {
     logger.info("test===========")

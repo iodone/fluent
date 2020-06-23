@@ -14,10 +14,10 @@ import io.circe.parser._
 import scala.concurrent.{Future, Promise}
 
 import app.BaseServiceTest
-import app.demo.domain.entity.RequestEntity._
-import app.demo.domain.entity.ResponseEntity._
-import app.demo.domain.entity.SchemaEntity._
-import app.demo.service.OrderService
+import app.demo.domain.Entity._
+import core.ResponseEntity._
+
+import app.demo.domain.interface._
 
 class OrderRouteSpec extends BaseServiceTest {
 

@@ -13,7 +13,6 @@ import kamon.Kamon
 
 
 import app.demo.delivery.http.HttpDelivery
-import app.demo.delivery.http.HandlerDelivery
 
 object Demo {
 
@@ -22,7 +21,7 @@ object Demo {
 
     val actorSystem = ActorSystem("Demo-App")
 
-    val conf = Config.load
+    val conf = Config.appConfig
     val host = conf.fluent.http.host
     val port = conf.fluent.http.port
 
@@ -35,9 +34,8 @@ object Demo {
 
 object DbMigrition {
   def main(args: Array[String]): Unit = {
-    val migration = DatabaseMigration(Config.load.fluent.database)
+    val migration = DatabaseMigration(Config.appConfig.fluent.databases.mysql)
     migration.clean
     migration.migrate
-
   }
 }
