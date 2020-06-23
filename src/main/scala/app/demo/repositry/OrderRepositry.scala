@@ -5,6 +5,8 @@ package app.demo.repositry
   */
 
 import app.demo.domain.entity.SchemaEntity._
+import app.demo.domain.interface._
+
 import com.typesafe.scalalogging.LazyLogging
 import core.Repository
 
@@ -29,15 +31,9 @@ trait OrderStorage extends QuillStorage {
   }
 }
 
-sealed trait OrderRepositry {
-  def save(order: OrderSchema): Future[Id]
-  def getOrder(id: Id): Future[Option[OrderSchema]]
-  def fetchItem(id: Id): Future[Option[ItemSchema]]
-  def save(items: List[ItemSchema]): Future[List[Id]]
-}
 
 
-case class DbOrderRepo(implicit ec: ExecutionContext) extends OrderRepositry with OrderStorage with LazyLogging {
+case class OrderRepositryImp(implicit ec: ExecutionContext) extends OrderRepositry with OrderStorage with LazyLogging {
 
 
   import dbContext._

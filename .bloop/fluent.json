@@ -1,0 +1,2619 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "fluent",
+        "directory": "C:\\Users\\Administrator\\work\\app\\github\\fluent",
+        "workspaceDir": "C:\\Users\\Administrator\\work\\app\\github\\fluent",
+        "sources": [
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\src\\main\\scala-2.12",
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\src\\main\\scala",
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\src\\main\\java",
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\target\\scala-2.12\\src_managed\\main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\lib\\transmittable-thread-local-2.11.4.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-jdbc_2.12\\3.4.10\\quill-jdbc_2.12-3.4.10.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\checkerframework\\checker-compat-qual\\2.0.0\\checker-compat-qual-2.0.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\errorprone\\error_prone_annotations\\2.1.3\\error_prone_annotations-2.1.3.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http_2.12\\10.1.11\\akka-http_2.12-10.1.11.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-async_2.12\\0.9.7\\scala-async_2.12-0.9.7.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-instrumentation-common_2.12\\2.0.0\\kamon-instrumentation-common_2.12-2.0.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\ssl-config-core_2.12\\0.3.8\\ssl-config-core_2.12-0.3.8.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\newts-core_2.12\\0.3.1\\newts-core_2.12-0.3.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scalamacros\\resetallattrs_2.12\\1.0.0\\resetallattrs_2.12-1.0.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\pprint_2.12\\0.5.5\\pprint_2.12-0.5.5.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\inject\\guice\\4.2.2\\guice-4.2.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-actor_2.12\\2.5.26\\akka-actor_2.12-2.5.26.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-bundle_2.12\\2.0.6\\kamon-bundle_2.12-2.0.6.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-protobuf_2.12\\2.5.26\\akka-protobuf_2.12-2.5.26.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-core_2.12\\0.10.0\\circe-core_2.12-0.10.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-core\\1.2.3\\logback-core-1.2.3.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-macros_2.12\\1.4.0\\cats-macros_2.12-1.4.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-api_2.12\\0.7.2\\accord-api_2.12-0.7.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-core_2.12\\0.7.2\\accord-core_2.12-0.7.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\javax\\inject\\javax.inject\\1\\javax.inject-1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-core_2.12\\2.0.4\\kamon-core_2.12-2.0.4.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-sql_2.12\\3.4.10\\quill-sql_2.12-3.4.10.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.1.7\\sourcecode_2.12-0.1.7.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\zaxxer\\HikariCP\\3.4.1\\HikariCP-3.4.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http-core_2.12\\10.1.11\\akka-http-core_2.12-10.1.11.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig_2.12\\0.9.2\\pureconfig_2.12-0.9.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\monocle-core_2.12\\1.5.1-cats\\monocle-core_2.12-1.5.1-cats.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\machinist_2.12\\0.6.5\\machinist_2.12-0.6.5.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-reflect\\2.12.7\\scala-reflect-2.12.7.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.2.7\\fansi_2.12-0.2.7.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\de\\heikoseeberger\\akka-http-circe_2.12\\1.20.1\\akka-http-circe_2.12-1.20.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.1.2\\scala-collection-compat_2.12-2.1.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\codehaus\\mojo\\animal-sniffer-annotations\\1.14\\animal-sniffer-annotations-1.14.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\alibaba\\transmittable-thread-local\\2.11.4\\transmittable-thread-local-2.11.4.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\guava\\guava\\25.1-android\\guava-25.1-android.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\flywaydb\\flyway-core\\5.2.1\\flyway-core-5.2.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\circe_2.12\\1.4.2\\circe_2.12-1.4.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-core_2.12\\3.4.10\\quill-core_2.12-3.4.10.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.8.0\\scala-java8-compat_2.12-0.8.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\core_2.12\\1.4.2\\core_2.12-1.4.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-prometheus_2.12\\2.0.1\\kamon-prometheus_2.12-2.0.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-core_2.12\\1.4.0\\cats-core_2.12-1.4.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-classic\\1.2.3\\logback-classic-1.2.3.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-kernel_2.12\\1.4.0\\cats-kernel_2.12-1.4.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-jawn_2.12\\0.10.0\\circe-jawn_2.12-0.10.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\macwire\\macros_2.12\\2.3.3\\macros_2.12-2.3.3.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-parsing_2.12\\10.1.11\\akka-parsing_2.12-10.1.11.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\akka-http-backend_2.12\\1.4.2\\akka-http-backend_2.12-1.4.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\mysql\\mysql-connector-java\\5.1.22\\mysql-connector-java-5.1.22.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\json-common_2.12\\1.4.2\\json-common_2.12-1.4.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-generic_2.12\\0.10.0\\circe-generic_2.12-0.10.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\net\\codingwell\\scala-guice_2.12\\4.2.3\\scala-guice_2.12-4.2.3.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\spire-math\\jawn-parser_2.12\\0.13.0\\jawn-parser_2.12-0.13.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\config\\1.3.4\\config-1.3.4.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\ofpay\\logback-mdc-ttl\\1.0.2\\logback-mdc-ttl-1.0.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig-macros_2.12\\0.9.2\\pureconfig-macros_2.12-0.9.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\nanohttpd\\nanohttpd\\2.3.1\\nanohttpd-2.3.1.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-parser_2.12\\0.10.0\\circe-parser_2.12-0.10.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-logback_2.12\\2.0.2\\kamon-logback_2.12-2.0.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\commons-io\\commons-io\\2.6\\commons-io-2.6.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-free_2.12\\1.1.0\\cats-free_2.12-1.1.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-stream_2.12\\2.5.26\\akka-stream_2.12-2.5.26.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-optics_2.12\\0.10.0\\circe-optics_2.12-0.10.0.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar",
+            "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-numbers_2.12\\0.10.0\\circe-numbers_2.12-0.10.0.jar"
+        ],
+        "out": "C:\\Users\\Administrator\\work\\app\\github\\fluent\\.bloop\\fluent",
+        "classesDir": "C:\\Users\\Administrator\\work\\app\\github\\fluent\\.bloop\\fluent\\scala-2.12\\classes",
+        "resources": [
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\src\\main\\resources",
+            "C:\\Users\\Administrator\\work\\app\\github\\fluent\\target\\scala-2.12\\resource_managed\\main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.7",
+            "options": [
+                
+            ],
+            "jars": [
+                "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7.jar",
+                "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
+                "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-reflect\\2.12.7\\scala-reflect-2.12.7.jar",
+                "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7.jar",
+                "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\jline\\jline\\2.14.6\\jline-2.14.6.jar"
+            ],
+            "analysis": "C:\\Users\\Administrator\\work\\app\\github\\fluent\\target\\streams\\compile\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.12.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Program Files\\Java\\jdk1.8.0_221\\jre",
+                "options": [
+                    "-Duser.dir=C:\\Users\\Administrator\\work\\app\\github\\fluent"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-jdbc_2.12",
+                    "version": "3.4.10",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-jdbc_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a7df7621cdb9644485850bb86cd6c0e1afd1afd3"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-jdbc_2.12\\3.4.10\\quill-jdbc_2.12-3.4.10.jar"
+                        },
+                        {
+                            "name": "quill-jdbc_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-jdbc_2.12\\3.4.10\\quill-jdbc_2.12-3.4.10-sources.jar"
+                        },
+                        {
+                            "name": "quill-jdbc_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d9f758f9792c8c881128f88898cf21cbda8c23cc"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-jdbc_2.12\\3.4.10\\quill-jdbc_2.12-3.4.10-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-compat-qual",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-compat-qual",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fc89b03860d11d6213d0154a62bcd1c2f69b9efa"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\checkerframework\\checker-compat-qual\\2.0.0\\checker-compat-qual-2.0.0.jar"
+                        },
+                        {
+                            "name": "checker-compat-qual",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "eb7f7d588d0aef07a2c89178053c2a9e4613947f"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\checkerframework\\checker-compat-qual\\2.0.0\\checker-compat-qual-2.0.0-sources.jar"
+                        },
+                        {
+                            "name": "checker-compat-qual",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "74e101e1a06fb4744b298ec4067b73695b6f294e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\checkerframework\\checker-compat-qual\\2.0.0\\checker-compat-qual-2.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "39b109f2cd352b2d71b52a3b5a1a9850e1dc304b"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\errorprone\\error_prone_annotations\\2.1.3\\error_prone_annotations-2.1.3.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "990fe1fd48078a2befecdfcebcad8e6e1bd195a0"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\errorprone\\error_prone_annotations\\2.1.3\\error_prone_annotations-2.1.3-sources.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "28ea6f81741992c53c5f8030995604345606dd9d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\errorprone\\error_prone_annotations\\2.1.3\\error_prone_annotations-2.1.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-http_2.12",
+                    "version": "10.1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "0a92f7aab4c42439b850710d686528d0daf21f8e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http_2.12\\10.1.11\\akka-http_2.12-10.1.11.jar"
+                        },
+                        {
+                            "name": "akka-http_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fe091aad80878ae9155e37d7a18d177515cf0b9d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http_2.12\\10.1.11\\akka-http_2.12-10.1.11-sources.jar"
+                        },
+                        {
+                            "name": "akka-http_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "6ce37df7f3872aa9ac4d429193ebdd182f3eed65"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http_2.12\\10.1.11\\akka-http_2.12-10.1.11-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-async_2.12",
+                    "version": "0.9.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-async_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "813b4007a8bb475202a3321cbf20fb582739062e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-async_2.12\\0.9.7\\scala-async_2.12-0.9.7.jar"
+                        },
+                        {
+                            "name": "scala-async_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d4257bd96b2bdf86f59252c0e376dae11ed9bb92"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-async_2.12\\0.9.7\\scala-async_2.12-0.9.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-async_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7a9e710d1bd909ad4e165a7eb037c89f9b4d62e3"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-async_2.12\\0.9.7\\scala-async_2.12-0.9.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.kamon",
+                    "name": "kamon-instrumentation-common_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kamon-instrumentation-common_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "58b88923d274f7847ab6bb0340422d9bec8b7388"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-instrumentation-common_2.12\\2.0.0\\kamon-instrumentation-common_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "kamon-instrumentation-common_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "42b3f37fec3c5ace484fb1142a23e7aacb19c0ac"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-instrumentation-common_2.12\\2.0.0\\kamon-instrumentation-common_2.12-2.0.0-sources.jar"
+                        },
+                        {
+                            "name": "kamon-instrumentation-common_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5f878b891ff2ee760337974478aa34194781dd34"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-instrumentation-common_2.12\\2.0.0\\kamon-instrumentation-common_2.12-2.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "ssl-config-core_2.12",
+                    "version": "0.3.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ssl-config-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "69ee3e1e3a6057372bbaeb9d107d4f6cf9311800"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\ssl-config-core_2.12\\0.3.8\\ssl-config-core_2.12-0.3.8.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e5a918d06c546f2da1173041bc521a40e132a2f8"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\ssl-config-core_2.12\\0.3.8\\ssl-config-core_2.12-0.3.8-sources.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f1faaf6490d5abd6effa972ffe6323f668b21f99"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\ssl-config-core_2.12\\0.3.8\\ssl-config-core_2.12-0.3.8-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.julien-truffaut",
+                    "name": "newts-core_2.12",
+                    "version": "0.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "newts-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2a8a79785275a5c8cb8d26b727e49907141b1c3c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\newts-core_2.12\\0.3.1\\newts-core_2.12-0.3.1.jar"
+                        },
+                        {
+                            "name": "newts-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "509140db2c65d8670ea1051c4e5c48810158e473"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\newts-core_2.12\\0.3.1\\newts-core_2.12-0.3.1-sources.jar"
+                        },
+                        {
+                            "name": "newts-core_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\newts-core_2.12\\0.3.1\\newts-core_2.12-0.3.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalamacros",
+                    "name": "resetallattrs_2.12",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "resetallattrs_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fda78e1e995ba77a9958308b2633212cc4c6d911"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scalamacros\\resetallattrs_2.12\\1.0.0\\resetallattrs_2.12-1.0.0.jar"
+                        },
+                        {
+                            "name": "resetallattrs_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "082ffc1907db2e9004ca16c0e0c18d4d89e9e572"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scalamacros\\resetallattrs_2.12\\1.0.0\\resetallattrs_2.12-1.0.0-sources.jar"
+                        },
+                        {
+                            "name": "resetallattrs_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "886f769c972cf34cfb2d4bf1f063b089fd245fba"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scalamacros\\resetallattrs_2.12\\1.0.0\\resetallattrs_2.12-1.0.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "pprint_2.12",
+                    "version": "0.5.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pprint_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "6e4fa1440c3580e02a139b56b233bc92ea7da641"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\pprint_2.12\\0.5.5\\pprint_2.12-0.5.5.jar"
+                        },
+                        {
+                            "name": "pprint_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\pprint_2.12\\0.5.5\\pprint_2.12-0.5.5-sources.jar"
+                        },
+                        {
+                            "name": "pprint_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\pprint_2.12\\0.5.5\\pprint_2.12-0.5.5-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.inject",
+                    "name": "guice",
+                    "version": "4.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guice",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "6dacbe18e5eaa7f6c9c36db33b42e7985e94ce77"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\inject\\guice\\4.2.2\\guice-4.2.2.jar"
+                        },
+                        {
+                            "name": "guice",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\inject\\guice\\4.2.2\\guice-4.2.2-sources.jar"
+                        },
+                        {
+                            "name": "guice",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3465c03e88ad89e6c3913a3fd944013160c3b506"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\inject\\guice\\4.2.2\\guice-4.2.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ed28ded51a8b1c6b112568def5f4b455e6809019"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1-sources.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor_2.12",
+                    "version": "2.5.26",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "14bf9cf411e7416e4512946efcf96e0d4225c655"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-actor_2.12\\2.5.26\\akka-actor_2.12-2.5.26.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "01496dbbcd668ff68b39ec97a84ddb618bea9e08"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-actor_2.12\\2.5.26\\akka-actor_2.12-2.5.26-sources.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "803f756fbcfb80e05783e93d2bf28c5bcebe9785"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-actor_2.12\\2.5.26\\akka-actor_2.12-2.5.26-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.kamon",
+                    "name": "kamon-bundle_2.12",
+                    "version": "2.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kamon-bundle_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4b653851ca0bb81b60100deeaf4e93f3766a1218"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-bundle_2.12\\2.0.6\\kamon-bundle_2.12-2.0.6.jar"
+                        },
+                        {
+                            "name": "kamon-bundle_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3113148ece419ede943f7807f55cb1f44ce3d395"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-bundle_2.12\\2.0.6\\kamon-bundle_2.12-2.0.6-sources.jar"
+                        },
+                        {
+                            "name": "kamon-bundle_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-bundle_2.12\\2.0.6\\kamon-bundle_2.12-2.0.6-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.12",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2ad65ccbeed662b51e2b96221cb4e7d7d6b7b87a"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "17be9d543fa1f7f01d57722cc37d0c4024a15f69"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2-sources.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2b4cfe8f0459143547595083dd9c35e586ab607c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "1.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e22de3366a698a9f744106fb6dda4335838cf6a7"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "429925530fb0f9a6fb26e5160532b7b3426557c0"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6-sources.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f01e468715c88f59c75d63399055a223a4db6954"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-protobuf_2.12",
+                    "version": "2.5.26",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-protobuf_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "da09a1cf0a430dc813e3830adcaf99f7a92b51cf"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-protobuf_2.12\\2.5.26\\akka-protobuf_2.12-2.5.26.jar"
+                        },
+                        {
+                            "name": "akka-protobuf_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2cad9beec5188665bd142ab69ce4d1c892d323a3"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-protobuf_2.12\\2.5.26\\akka-protobuf_2.12-2.5.26-sources.jar"
+                        },
+                        {
+                            "name": "akka-protobuf_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bb49a751df969681d071832284e0a8ee49fd21d9"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-protobuf_2.12\\2.5.26\\akka-protobuf_2.12-2.5.26-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-core_2.12",
+                    "version": "0.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c602b4fc3b221407a63f0f2c832bdba0da8309dd"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-core_2.12\\0.10.0\\circe-core_2.12-0.10.0.jar"
+                        },
+                        {
+                            "name": "circe-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-core_2.12\\0.10.0\\circe-core_2.12-0.10.0-sources.jar"
+                        },
+                        {
+                            "name": "circe-core_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3577d6bfe7011f23e305fdebfcc65590e8d2aef6"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-core_2.12\\0.10.0\\circe-core_2.12-0.10.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "864344400c3d4d92dfeb0a305dc87d953677c03c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-core\\1.2.3\\logback-core-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3ebabe69eba0196af9ad3a814f723fb720b9101e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-core\\1.2.3\\logback-core-1.2.3-sources.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c978d4afd24d32991c8aa31a9c8a1119f19a1cb4"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-core\\1.2.3\\logback-core-1.2.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-macros_2.12",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-macros_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2436705a12dd4a9999c7568db4f54e4f1b95ac23"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-macros_2.12\\1.4.0\\cats-macros_2.12-1.4.0.jar"
+                        },
+                        {
+                            "name": "cats-macros_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-macros_2.12\\1.4.0\\cats-macros_2.12-1.4.0-sources.jar"
+                        },
+                        {
+                            "name": "cats-macros_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "242f277ad17cd9b351714d646142192c0250f3cc"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-macros_2.12\\1.4.0\\cats-macros_2.12-1.4.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.wix",
+                    "name": "accord-api_2.12",
+                    "version": "0.7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "accord-api_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ee3148c9db636916b2a3e4053e71603d36020644"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-api_2.12\\0.7.2\\accord-api_2.12-0.7.2.jar"
+                        },
+                        {
+                            "name": "accord-api_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-api_2.12\\0.7.2\\accord-api_2.12-0.7.2-sources.jar"
+                        },
+                        {
+                            "name": "accord-api_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2715623e1bbfa1a6ee18a4f2490473c3a090c9fc"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-api_2.12\\0.7.2\\accord-api_2.12-0.7.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.wix",
+                    "name": "accord-core_2.12",
+                    "version": "0.7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "accord-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "069376db7a1aa6fe2c22243fb3874cbf0301f2b0"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-core_2.12\\0.7.2\\accord-core_2.12-0.7.2.jar"
+                        },
+                        {
+                            "name": "accord-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-core_2.12\\0.7.2\\accord-core_2.12-0.7.2-sources.jar"
+                        },
+                        {
+                            "name": "accord-core_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\wix\\accord-core_2.12\\0.7.2\\accord-core_2.12-0.7.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.chuusai",
+                    "name": "shapeless_2.12",
+                    "version": "2.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shapeless_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "6041e2c4871650c556a9c6842e43c04ed462b11f"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3.jar"
+                        },
+                        {
+                            "name": "shapeless_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3-sources.jar"
+                        },
+                        {
+                            "name": "shapeless_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.inject",
+                    "name": "javax.inject",
+                    "version": "1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "6975da39a7040257bd51d21a231b76c915872d38  /home/maven/repository-staging/to-ibiblio/maven2/javax/inject/javax.inject/1/javax.inject-1.jar\n"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\javax\\inject\\javax.inject\\1\\javax.inject-1.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\javax\\inject\\javax.inject\\1\\javax.inject-1-sources.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "70ec961c25111ed9015d1af77772d96383c2d238  /home/maven/repository-staging/to-ibiblio/maven2/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar\n"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\javax\\inject\\javax.inject\\1\\javax.inject-1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.kamon",
+                    "name": "kamon-core_2.12",
+                    "version": "2.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kamon-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "9e73965973a7b608fe0b82d174fa7fec4fa23852"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-core_2.12\\2.0.4\\kamon-core_2.12-2.0.4.jar"
+                        },
+                        {
+                            "name": "kamon-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bc434e95c88ad1a83486976a223ceb3af35b2f1a"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-core_2.12\\2.0.4\\kamon-core_2.12-2.0.4-sources.jar"
+                        },
+                        {
+                            "name": "kamon-core_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5983f8ef4ff605669d4b32a40b2bf6423628a817"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-core_2.12\\2.0.4\\kamon-core_2.12-2.0.4-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-sql_2.12",
+                    "version": "3.4.10",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-sql_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fe69fa7ac8537b4618e1c7fa16bbc8161ceb880e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-sql_2.12\\3.4.10\\quill-sql_2.12-3.4.10.jar"
+                        },
+                        {
+                            "name": "quill-sql_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f4f9d7b0502cc411ed840f6e82fcf02e2772d919"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-sql_2.12\\3.4.10\\quill-sql_2.12-3.4.10-sources.jar"
+                        },
+                        {
+                            "name": "quill-sql_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "edcfa0e3572bf6149c6560db8483deb8fbad4790"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-sql_2.12\\3.4.10\\quill-sql_2.12-3.4.10-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "sourcecode_2.12",
+                    "version": "0.1.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sourcecode_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "09e8529b7b8771acea441a2c8478824cd63c7e84"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.1.7\\sourcecode_2.12-0.1.7.jar"
+                        },
+                        {
+                            "name": "sourcecode_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.1.7\\sourcecode_2.12-0.1.7-sources.jar"
+                        },
+                        {
+                            "name": "sourcecode_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.1.7\\sourcecode_2.12-0.1.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.zaxxer",
+                    "name": "HikariCP",
+                    "version": "3.4.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "HikariCP",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "842894380a73b72c2ecd9e483403e4d5ef7d8b76"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\zaxxer\\HikariCP\\3.4.1\\HikariCP-3.4.1.jar"
+                        },
+                        {
+                            "name": "HikariCP",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "116d10ad9154a65d0915bcabdc19722121224668"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\zaxxer\\HikariCP\\3.4.1\\HikariCP-3.4.1-sources.jar"
+                        },
+                        {
+                            "name": "HikariCP",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e115311e9dfdae6dabc7ceee19bdb8da492e0c20"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\zaxxer\\HikariCP\\3.4.1\\HikariCP-3.4.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-http-core_2.12",
+                    "version": "10.1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "574f6719ae7f46dae39f6c7e2f000aa6da48e3c9"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http-core_2.12\\10.1.11\\akka-http-core_2.12-10.1.11.jar"
+                        },
+                        {
+                            "name": "akka-http-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "504fcce98475801621f396cbbb937308ccbd7440"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http-core_2.12\\10.1.11\\akka-http-core_2.12-10.1.11-sources.jar"
+                        },
+                        {
+                            "name": "akka-http-core_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "40df6241ea3dc22b29ea1fe793086669f9702b83"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-http-core_2.12\\10.1.11\\akka-http-core_2.12-10.1.11-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-compiler",
+                    "version": "2.12.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-compiler",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a393b72134dff0751d5110c3e4808689deba75c1"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7ed9b44d294ecea06c120018d9e2badb02ebf386"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5d82958c72ad1f373b2cc47796c3da5c463f3d35"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.pureconfig",
+                    "name": "pureconfig_2.12",
+                    "version": "0.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pureconfig_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "252285efa6776da16205e6b5cd07b64d1cffdb8d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig_2.12\\0.9.2\\pureconfig_2.12-0.9.2.jar"
+                        },
+                        {
+                            "name": "pureconfig_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ac43fea0658b31aa3b060e1632e58b99353b6c1d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig_2.12\\0.9.2\\pureconfig_2.12-0.9.2-sources.jar"
+                        },
+                        {
+                            "name": "pureconfig_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d09a42c01ee87bd7f24acbb81b0730441e589c80"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig_2.12\\0.9.2\\pureconfig_2.12-0.9.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.julien-truffaut",
+                    "name": "monocle-core_2.12",
+                    "version": "1.5.1-cats",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "monocle-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e047df55e36c5e174821541c2791767724fcac19"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\monocle-core_2.12\\1.5.1-cats\\monocle-core_2.12-1.5.1-cats.jar"
+                        },
+                        {
+                            "name": "monocle-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "dbf141ccaa385ef3b59ecedb9287f3a76d5e39d8"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\monocle-core_2.12\\1.5.1-cats\\monocle-core_2.12-1.5.1-cats-sources.jar"
+                        },
+                        {
+                            "name": "monocle-core_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\julien-truffaut\\monocle-core_2.12\\1.5.1-cats\\monocle-core_2.12-1.5.1-cats-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "machinist_2.12",
+                    "version": "0.6.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "machinist_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "abf43203c83e1c39532e24e87d279712c0ddf823"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\machinist_2.12\\0.6.5\\machinist_2.12-0.6.5.jar"
+                        },
+                        {
+                            "name": "machinist_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\machinist_2.12\\0.6.5\\machinist_2.12-0.6.5-sources.jar"
+                        },
+                        {
+                            "name": "machinist_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "8ffbaf380efc54a747a7f6c6f1722dfb25adef92"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\machinist_2.12\\0.6.5\\machinist_2.12-0.6.5-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c5a8eb12969e77db4c0dd785c104b59d226b8265"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-reflect\\2.12.7\\scala-reflect-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "98c840d3cc35317bae945ee4e7a5960b47805edb"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-reflect\\2.12.7\\scala-reflect-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-reflect\\2.12.7\\scala-reflect-2.12.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reactivestreams",
+                    "name": "reactive-streams",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "reactive-streams",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "323964c36556eb0e6209f65c1cef72b53b461ab8"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fb592a3d57b11e71eb7a6211dd12ba824c5dd037"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d33cbe63ae492cde692c59b0fded80c944590c39"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\reactivestreams\\reactive-streams\\1.0.2\\reactive-streams-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "fansi_2.12",
+                    "version": "0.2.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fansi_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1205f158df79bb9ed5a574f350549ac3c79f132d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.2.7\\fansi_2.12-0.2.7.jar"
+                        },
+                        {
+                            "name": "fansi_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.2.7\\fansi_2.12-0.2.7-sources.jar"
+                        },
+                        {
+                            "name": "fansi_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.2.7\\fansi_2.12-0.2.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "de.heikoseeberger",
+                    "name": "akka-http-circe_2.12",
+                    "version": "1.20.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http-circe_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "11dedc2cd21a4ac2a71325565f066d0bf7967f1e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\de\\heikoseeberger\\akka-http-circe_2.12\\1.20.1\\akka-http-circe_2.12-1.20.1.jar"
+                        },
+                        {
+                            "name": "akka-http-circe_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "faea1f10758b6c19ba366dc3b1bfc6789a7f164f"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\de\\heikoseeberger\\akka-http-circe_2.12\\1.20.1\\akka-http-circe_2.12-1.20.1-sources.jar"
+                        },
+                        {
+                            "name": "akka-http-circe_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bd0cb3bdfd2ff9084b4e61377ac6ab31c3efa8e7"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\de\\heikoseeberger\\akka-http-circe_2.12\\1.20.1\\akka-http-circe_2.12-1.20.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.25",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "da76ca59f6a57ee3102f8f9bd9cee742973efa8a"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "962153db4a9ea71b79d047dfd1b2a0d80d8f4739"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25-sources.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f003e89ddebdbaca5cf3fc7cc0c67c88c2ca1a3c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\slf4j\\slf4j-api\\1.7.25\\slf4j-api-1.7.25-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.12",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.12",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.1.2\\scala-collection-compat_2.12-2.1.2.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.1.2\\scala-collection-compat_2.12-2.1.2-sources.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.1.2\\scala-collection-compat_2.12-2.1.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.codehaus.mojo",
+                    "name": "animal-sniffer-annotations",
+                    "version": "1.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "animal-sniffer-annotations",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "775b7e22fb10026eed3f86e8dc556dfafe35f2d5"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\codehaus\\mojo\\animal-sniffer-annotations\\1.14\\animal-sniffer-annotations-1.14.jar"
+                        },
+                        {
+                            "name": "animal-sniffer-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\codehaus\\mojo\\animal-sniffer-annotations\\1.14\\animal-sniffer-annotations-1.14-sources.jar"
+                        },
+                        {
+                            "name": "animal-sniffer-annotations",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d90e19c7bc3a594aac2307bcfe9f2362ec4108ea"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\codehaus\\mojo\\animal-sniffer-annotations\\1.14\\animal-sniffer-annotations-1.14-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.alibaba",
+                    "name": "transmittable-thread-local",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "transmittable-thread-local",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b087406181427aa1e93d032e7e9073545eed7bf6"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\alibaba\\transmittable-thread-local\\2.11.4\\transmittable-thread-local-2.11.4.jar"
+                        },
+                        {
+                            "name": "transmittable-thread-local",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3e033e4fe22a9d5e1683e7482f87b6c535cc0c6b"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\alibaba\\transmittable-thread-local\\2.11.4\\transmittable-thread-local-2.11.4-sources.jar"
+                        },
+                        {
+                            "name": "transmittable-thread-local",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\alibaba\\transmittable-thread-local\\2.11.4\\transmittable-thread-local-2.11.4-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "25.1-android",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bdaab946ca5ad20253502d873ba0c3313d141036"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\guava\\guava\\25.1-android\\guava-25.1-android.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a1fe5380cc1f2979e434c3b6ff43d69328ab4686"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\guava\\guava\\25.1-android\\guava-25.1-android-sources.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d666974cefd0aaa8e5574f69d0ece10d78c11723"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\guava\\guava\\25.1-android\\guava-25.1-android-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.flywaydb",
+                    "name": "flyway-core",
+                    "version": "5.2.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "flyway-core",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bfcb5fa963c2100c63ea68b2efad52c582de7380"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\flywaydb\\flyway-core\\5.2.1\\flyway-core-5.2.1.jar"
+                        },
+                        {
+                            "name": "flyway-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\flywaydb\\flyway-core\\5.2.1\\flyway-core-5.2.1-sources.jar"
+                        },
+                        {
+                            "name": "flyway-core",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\flywaydb\\flyway-core\\5.2.1\\flyway-core-5.2.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.sttp",
+                    "name": "circe_2.12",
+                    "version": "1.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "de15ca26a6797ed80b735f871a6d17bb3b6a0e36"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\circe_2.12\\1.4.2\\circe_2.12-1.4.2.jar"
+                        },
+                        {
+                            "name": "circe_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\circe_2.12\\1.4.2\\circe_2.12-1.4.2-sources.jar"
+                        },
+                        {
+                            "name": "circe_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "57e20df8c72be608104196b747737896905104a2"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\circe_2.12\\1.4.2\\circe_2.12-1.4.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.12",
+                    "version": "3.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b1f19bc6774e01debf09bf5f564ad3613687bf49"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "811d21a0165b722a8f18d46b198f8f958105815c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2-sources.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e1013d7e5130e147f06a3a5cac958b7b6dc82fd7"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\scala-logging\\scala-logging_2.12\\3.9.2\\scala-logging_2.12-3.9.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-core_2.12",
+                    "version": "3.4.10",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d64c466874f7807a1d1a5426bb64105273229ea6"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-core_2.12\\3.4.10\\quill-core_2.12-3.4.10.jar"
+                        },
+                        {
+                            "name": "quill-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c135e6cf425f7e05eb0f73f4d5131a5adbae1c34"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-core_2.12\\3.4.10\\quill-core_2.12-3.4.10-sources.jar"
+                        },
+                        {
+                            "name": "quill-core_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "71e55c1161d7378f571cebc3bc1680721d8a3b2b"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\getquill\\quill-core_2.12\\3.4.10\\quill-core_2.12-3.4.10-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.12",
+                    "version": "0.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1e6f1e745bf6d3c34d1e2ab150653306069aaf34"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.8.0\\scala-java8-compat_2.12-0.8.0.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.8.0\\scala-java8-compat_2.12-0.8.0-sources.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ee2915a9c58bcb9822a59d14b9d91285befcacfa"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\modules\\scala-java8-compat_2.12\\0.8.0\\scala-java8-compat_2.12-0.8.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.sttp",
+                    "name": "core_2.12",
+                    "version": "1.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4eb487b69a34dfa0d4a8d58a3e48ce86035596ee"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\core_2.12\\1.4.2\\core_2.12-1.4.2.jar"
+                        },
+                        {
+                            "name": "core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ed9baa37faf9a15df26d6391a5a3fe3899478036"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\core_2.12\\1.4.2\\core_2.12-1.4.2-sources.jar"
+                        },
+                        {
+                            "name": "core_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\core_2.12\\1.4.2\\core_2.12-1.4.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.kamon",
+                    "name": "kamon-prometheus_2.12",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kamon-prometheus_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "da7ea69914d7fd63d1878573fb0880351b428342"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-prometheus_2.12\\2.0.1\\kamon-prometheus_2.12-2.0.1.jar"
+                        },
+                        {
+                            "name": "kamon-prometheus_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1dac50de983724f12cb56047322d1bdb73d87894"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-prometheus_2.12\\2.0.1\\kamon-prometheus_2.12-2.0.1-sources.jar"
+                        },
+                        {
+                            "name": "kamon-prometheus_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c1b928b5053c921d04724ec3684f1a8448d5cf5c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-prometheus_2.12\\2.0.1\\kamon-prometheus_2.12-2.0.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-core_2.12",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e9be08c0a1b39f39d8a9130a856c9b184dd1ec2f"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-core_2.12\\1.4.0\\cats-core_2.12-1.4.0.jar"
+                        },
+                        {
+                            "name": "cats-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-core_2.12\\1.4.0\\cats-core_2.12-1.4.0-sources.jar"
+                        },
+                        {
+                            "name": "cats-core_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "20971dc3c01283d880dd73b2f5cad20f5a95f4df"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-core_2.12\\1.4.0\\cats-core_2.12-1.4.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7c4f3c474fb2c041d8028740440937705ebb473a"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-classic\\1.2.3\\logback-classic-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "cfd5385e0c5ed1c8a5dce57d86e79cf357153a64"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-classic\\1.2.3\\logback-classic-1.2.3-sources.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "99b0433b7d86044643b7d677f22d2c793d31d416"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\ch\\qos\\logback\\logback-classic\\1.2.3\\logback-classic-1.2.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-kernel_2.12",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-kernel_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "af8aea4585e5bd90fe071324f98c461ac7b62907"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-kernel_2.12\\1.4.0\\cats-kernel_2.12-1.4.0.jar"
+                        },
+                        {
+                            "name": "cats-kernel_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "62db0a916d082da755a315240f67c7efd9321320"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-kernel_2.12\\1.4.0\\cats-kernel_2.12-1.4.0-sources.jar"
+                        },
+                        {
+                            "name": "cats-kernel_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3d15cd741e0250ed6cc49b848971d71192d02917"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-kernel_2.12\\1.4.0\\cats-kernel_2.12-1.4.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-jawn_2.12",
+                    "version": "0.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-jawn_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "979ce1dc1d26ae0bf33601e0bb4d3a49dba549d9"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-jawn_2.12\\0.10.0\\circe-jawn_2.12-0.10.0.jar"
+                        },
+                        {
+                            "name": "circe-jawn_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-jawn_2.12\\0.10.0\\circe-jawn_2.12-0.10.0-sources.jar"
+                        },
+                        {
+                            "name": "circe-jawn_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-jawn_2.12\\0.10.0\\circe-jawn_2.12-0.10.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.macwire",
+                    "name": "macros_2.12",
+                    "version": "2.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "macros_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b8935d2f278abfdbf8381370ffc11b2017834d43"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\macwire\\macros_2.12\\2.3.3\\macros_2.12-2.3.3.jar"
+                        },
+                        {
+                            "name": "macros_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\macwire\\macros_2.12\\2.3.3\\macros_2.12-2.3.3-sources.jar"
+                        },
+                        {
+                            "name": "macros_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\macwire\\macros_2.12\\2.3.3\\macros_2.12-2.3.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-parsing_2.12",
+                    "version": "10.1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-parsing_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c38a16167c83a83ffd83268ff3b970888f495223"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-parsing_2.12\\10.1.11\\akka-parsing_2.12-10.1.11.jar"
+                        },
+                        {
+                            "name": "akka-parsing_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5d28b95635e93e566bc1922455bdf2d2c85f553d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-parsing_2.12\\10.1.11\\akka-parsing_2.12-10.1.11-sources.jar"
+                        },
+                        {
+                            "name": "akka-parsing_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "dfb386abad16a635d17d13d56d0d69afc967bfad"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-parsing_2.12\\10.1.11\\akka-parsing_2.12-10.1.11-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.sttp",
+                    "name": "akka-http-backend_2.12",
+                    "version": "1.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http-backend_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "dc501e9ffd6e5d6b42d7d2ebd29000823f79b82d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\akka-http-backend_2.12\\1.4.2\\akka-http-backend_2.12-1.4.2.jar"
+                        },
+                        {
+                            "name": "akka-http-backend_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\akka-http-backend_2.12\\1.4.2\\akka-http-backend_2.12-1.4.2-sources.jar"
+                        },
+                        {
+                            "name": "akka-http-backend_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\akka-http-backend_2.12\\1.4.2\\akka-http-backend_2.12-1.4.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "mysql",
+                    "name": "mysql-connector-java",
+                    "version": "5.1.22",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "mysql-connector-java",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3ae0cff91d7f40d5b4c7cefbbd1eab34025bdc15  mysql-connector-java-5.1.22.jar\n"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\mysql\\mysql-connector-java\\5.1.22\\mysql-connector-java-5.1.22.jar"
+                        },
+                        {
+                            "name": "mysql-connector-java",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\mysql\\mysql-connector-java\\5.1.22\\mysql-connector-java-5.1.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.sttp",
+                    "name": "json-common_2.12",
+                    "version": "1.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json-common_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "722d99b431924de634eca6d0b3ef6694280859a1"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\json-common_2.12\\1.4.2\\json-common_2.12-1.4.2.jar"
+                        },
+                        {
+                            "name": "json-common_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "247ddcb2ddcc02412a8ca4d27e8c7d4cc5b6bd7d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\json-common_2.12\\1.4.2\\json-common_2.12-1.4.2-sources.jar"
+                        },
+                        {
+                            "name": "json-common_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\softwaremill\\sttp\\json-common_2.12\\1.4.2\\json-common_2.12-1.4.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-generic_2.12",
+                    "version": "0.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-generic_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "53844268ad4bbd79ddeae4d768267de17baa02be"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-generic_2.12\\0.10.0\\circe-generic_2.12-0.10.0.jar"
+                        },
+                        {
+                            "name": "circe-generic_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-generic_2.12\\0.10.0\\circe-generic_2.12-0.10.0-sources.jar"
+                        },
+                        {
+                            "name": "circe-generic_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3419bedceddd3194c4057fae76c176cb5dd04ba5"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-generic_2.12\\0.10.0\\circe-generic_2.12-0.10.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.codingwell",
+                    "name": "scala-guice_2.12",
+                    "version": "4.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-guice_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "dec9da16ac2d22f217f8d90e35e33a027f110e3e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\net\\codingwell\\scala-guice_2.12\\4.2.3\\scala-guice_2.12-4.2.3.jar"
+                        },
+                        {
+                            "name": "scala-guice_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "dfcb0b1cd64b6667efb8a8cab7ad7ace04c6c182"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\net\\codingwell\\scala-guice_2.12\\4.2.3\\scala-guice_2.12-4.2.3-sources.jar"
+                        },
+                        {
+                            "name": "scala-guice_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f89393b3e18d08c7fa36d27df575cf4a2dd7b3c5"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\net\\codingwell\\scala-guice_2.12\\4.2.3\\scala-guice_2.12-4.2.3-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "macro-compat_2.12",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "macro-compat_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ed809d26ef4237d7c079ae6cf7ebd0dfa7986adf"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1.jar"
+                        },
+                        {
+                            "name": "macro-compat_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1-sources.jar"
+                        },
+                        {
+                            "name": "macro-compat_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.spire-math",
+                    "name": "jawn-parser_2.12",
+                    "version": "0.13.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jawn-parser_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4a2e53bbe3c6f467384327abc9bab25d7cdcada4"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\spire-math\\jawn-parser_2.12\\0.13.0\\jawn-parser_2.12-0.13.0.jar"
+                        },
+                        {
+                            "name": "jawn-parser_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "8f870ddf4917fccdbd118da8f709eb343e83007b"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\spire-math\\jawn-parser_2.12\\0.13.0\\jawn-parser_2.12-0.13.0-sources.jar"
+                        },
+                        {
+                            "name": "jawn-parser_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\spire-math\\jawn-parser_2.12\\0.13.0\\jawn-parser_2.12-0.13.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.3.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d0b3799b8e3a65c7b58c2aab9963603e687e2f91"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\config\\1.3.4\\config-1.3.4.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\config\\1.3.4\\config-1.3.4-sources.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\config\\1.3.4\\config-1.3.4-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.ofpay",
+                    "name": "logback-mdc-ttl",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-mdc-ttl",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "71b4fe3580294c20044d4fb63e74604b7f0bc8e7"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\ofpay\\logback-mdc-ttl\\1.0.2\\logback-mdc-ttl-1.0.2.jar"
+                        },
+                        {
+                            "name": "logback-mdc-ttl",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\ofpay\\logback-mdc-ttl\\1.0.2\\logback-mdc-ttl-1.0.2-sources.jar"
+                        },
+                        {
+                            "name": "logback-mdc-ttl",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "300cd41b977e34787e9e67210f0337a5727b479e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\ofpay\\logback-mdc-ttl\\1.0.2\\logback-mdc-ttl-1.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.pureconfig",
+                    "name": "pureconfig-macros_2.12",
+                    "version": "0.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pureconfig-macros_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "afd6310cab5d43eea2c3a61dcef92c88d9cda48d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig-macros_2.12\\0.9.2\\pureconfig-macros_2.12-0.9.2.jar"
+                        },
+                        {
+                            "name": "pureconfig-macros_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "0b12f0c5bae649d151c2960ef784bab6c00e68d0"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig-macros_2.12\\0.9.2\\pureconfig-macros_2.12-0.9.2-sources.jar"
+                        },
+                        {
+                            "name": "pureconfig-macros_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "52587907d9744a30aeb42bb9eaf71b15f51ed766"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\github\\pureconfig\\pureconfig-macros_2.12\\0.9.2\\pureconfig-macros_2.12-0.9.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "18c09ad08ec783f5074f4a0d6308a78759000cb1"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c57db2043a23e468ce9ae27e764c8dd8c0ad88c8"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "228ad1f8aaa410792308a28847ea21f4f3d52f1e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.nanohttpd",
+                    "name": "nanohttpd",
+                    "version": "2.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "nanohttpd",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a8d54d1ca554a77f377eff6bf9e16ca8383c8f6c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\nanohttpd\\nanohttpd\\2.3.1\\nanohttpd-2.3.1.jar"
+                        },
+                        {
+                            "name": "nanohttpd",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c820129da77c30b2e4ea1cea619d7f589a17bcdd"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\nanohttpd\\nanohttpd\\2.3.1\\nanohttpd-2.3.1-sources.jar"
+                        },
+                        {
+                            "name": "nanohttpd",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1c128229d2de5d623d3821d0e1b3a4be0e24d7c6"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\nanohttpd\\nanohttpd\\2.3.1\\nanohttpd-2.3.1-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-parser_2.12",
+                    "version": "0.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-parser_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a5508300b924dffebbb09f3350014089dd40d7ff"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-parser_2.12\\0.10.0\\circe-parser_2.12-0.10.0.jar"
+                        },
+                        {
+                            "name": "circe-parser_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "cee287f5e0e016d0313bc74e4dff577684350352"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-parser_2.12\\0.10.0\\circe-parser_2.12-0.10.0-sources.jar"
+                        },
+                        {
+                            "name": "circe-parser_2.12",
+                            "classifier": "javadoc",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-parser_2.12\\0.10.0\\circe-parser_2.12-0.10.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.kamon",
+                    "name": "kamon-logback_2.12",
+                    "version": "2.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kamon-logback_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "9b93477340b44c1a50c04789aa863bb941567cee"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-logback_2.12\\2.0.2\\kamon-logback_2.12-2.0.2.jar"
+                        },
+                        {
+                            "name": "kamon-logback_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bb0b78b695e8d3e020f262a31f1a9d63c0c9967e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-logback_2.12\\2.0.2\\kamon-logback_2.12-2.0.2-sources.jar"
+                        },
+                        {
+                            "name": "kamon-logback_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1bec4b5fe31f78faf0a85e6583df154a8f02097e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\kamon\\kamon-logback_2.12\\2.0.2\\kamon-logback_2.12-2.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-io",
+                    "name": "commons-io",
+                    "version": "2.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-io",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "815893df5f31da2ece4040fe0a12fd44b577afaf"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\commons-io\\commons-io\\2.6\\commons-io-2.6.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2566800dc841d9d2c5a0d34d807e45d4107dbbdf"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\commons-io\\commons-io\\2.6\\commons-io-2.6-sources.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "38ce4d06c1917fa2f2b1dde31bd111223ac7a551"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\commons-io\\commons-io\\2.6\\commons-io-2.6-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-free_2.12",
+                    "version": "1.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-free_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "00a150baf37dd11e73deb3dc590b8fa440657350"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-free_2.12\\1.1.0\\cats-free_2.12-1.1.0.jar"
+                        },
+                        {
+                            "name": "cats-free_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "9938e0b401e3f872514b9425804441b60730521a"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-free_2.12\\1.1.0\\cats-free_2.12-1.1.0-sources.jar"
+                        },
+                        {
+                            "name": "cats-free_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f06767198d623795be98359c1e4678a6f105b704"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\typelevel\\cats-free_2.12\\1.1.0\\cats-free_2.12-1.1.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-stream_2.12",
+                    "version": "2.5.26",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-stream_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "9b7e2b6edbf3cc9a9e27fa76d88491deeec690ee"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-stream_2.12\\2.5.26\\akka-stream_2.12-2.5.26.jar"
+                        },
+                        {
+                            "name": "akka-stream_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "534e339e076622655a975248fc689b23e86e37cb"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-stream_2.12\\2.5.26\\akka-stream_2.12-2.5.26-sources.jar"
+                        },
+                        {
+                            "name": "akka-stream_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3322baa9b01161b04afa88de78f6721b4a705a56"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\typesafe\\akka\\akka-stream_2.12\\2.5.26\\akka-stream_2.12-2.5.26-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "aopalliance",
+                    "name": "aopalliance",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aopalliance",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0.jar"
+                        },
+                        {
+                            "name": "aopalliance",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4a4b6d692e17846a9f3da036438a7ac491d3c814  aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar\n"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\aopalliance\\aopalliance\\1.0\\aopalliance-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-optics_2.12",
+                    "version": "0.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-optics_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d5c13ccb0fa3a1275aa942a6992889b2f95e3457"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-optics_2.12\\0.10.0\\circe-optics_2.12-0.10.0.jar"
+                        },
+                        {
+                            "name": "circe-optics_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-optics_2.12\\0.10.0\\circe-optics_2.12-0.10.0-sources.jar"
+                        },
+                        {
+                            "name": "circe-optics_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a9bbfd34fe43994cbf06ec21b6b65b640c4a3231"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-optics_2.12\\0.10.0\\circe-optics_2.12-0.10.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "25ea2e8b0c338a877313bd4672d3fe056ea78f0d"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b19b5927c2c25b6c70f093767041e641ae0b1b35"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2-sources.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "07cb5b4e91eb0741882c8fefb2fd0338eff9857c"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-numbers_2.12",
+                    "version": "0.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-numbers_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "8c87ded057189cbeee0d7c2e9f55cc4dac487ee1"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-numbers_2.12\\0.10.0\\circe-numbers_2.12-0.10.0.jar"
+                        },
+                        {
+                            "name": "circe-numbers_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3806d839f4467d717ffbb4b315044e3c8e0bce98"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-numbers_2.12\\0.10.0\\circe-numbers_2.12-0.10.0-sources.jar"
+                        },
+                        {
+                            "name": "circe-numbers_2.12",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "df5b07005fda75307dcdcc4e66200fd29ed30da3"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\io\\circe\\circe-numbers_2.12\\0.10.0\\circe-numbers_2.12-0.10.0-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-compiler",
+                    "version": "2.12.7",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-compiler",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a393b72134dff0751d5110c3e4808689deba75c1"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7ed9b44d294ecea06c120018d9e2badb02ebf386"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-compiler",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5d82958c72ad1f373b2cc47796c3da5c463f3d35"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-compiler\\2.12.7\\scala-compiler-2.12.7-javadoc.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.7",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "18c09ad08ec783f5074f4a0d6308a78759000cb1"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c57db2043a23e468ce9ae27e764c8dd8c0ad88c8"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7-sources.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "javadoc",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "228ad1f8aaa410792308a28847ea21f4f3d52f1e"
+                            },
+                            "path": "C:\\Users\\Administrator\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo.huaweicloud.com\\repository\\maven\\org\\scala-lang\\scala-library\\2.12.7\\scala-library-2.12.7-javadoc.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

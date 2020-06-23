@@ -33,13 +33,10 @@ case class HttpDelivery(implicit ec: ExecutionContext) extends Delivery[Route] {
     appRouter.routes
   }
 
-//  val orderRepo = new DbOrderRepo()
-//  val os = new OrderService(orderRepo)
-//  val or = new OrderRouter(os)
 
-  lazy val orderRepo = wire[DbOrderRepo]
-  lazy val os = wire[OrderService]
-  lazy val or = wire[OrderRouter]
+  lazy val orderRepo = wire[OrderRegistryImp]
+  lazy val os = wire[OrderServiceImp]
+  lazy val or = wire[OrderRouterImp]
 
 
   val appRouter: Router = new Router {
