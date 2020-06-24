@@ -7,7 +7,7 @@
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern> %date [%traceID] [%spanID] [%thread] %-5level %logger{80}.%M - %msg%n </pattern>
+            <pattern> %date [%traceID] [%contextTag{requestID}] [%thread] %-5level %logger{80}.%M - %msg%n </pattern>
         </encoder>
     </appender>
 
@@ -16,7 +16,7 @@
             <fileNamePattern>${log_dir:-.}/var/log/app.log.%d{yyyy-MM-dd}</fileNamePattern>
         </rollingPolicy>
         <encoder>
-            <pattern>%date [%traceID] [%spanID] [%thread] %-5level %logger{80}.%M - %msg%n</pattern>
+            <pattern>%date [%traceID] [%contextTag{RequestID}] [%thread] %-5level %logger{80}.%M - %msg%n</pattern>
         </encoder>
     </appender>
 

@@ -7,7 +7,7 @@ import akka.http.scaladsl.model.HttpMethods
 import akka.http.scaladsl.model.headers._
 import akka.http.scaladsl.server.Directives.{extractRequestContext, handleExceptions, handleRejections, mapResponse, respondWithHeaders}
 import com.typesafe.scalalogging.LazyLogging
-
+import kamon.context.Context
 import scala.concurrent.duration.FiniteDuration
 
 import common.handler._
@@ -20,10 +20,10 @@ object LogginReqDirectives extends LazyLogging {
 
     extractRequestContext.flatMap { ctx =>
 
-      val reqId = ctx.request.headers.find(_.name == "X-Request-Id").map(_.value).getOrElse(UUID.randomUUID.toString)
-      //          val requestId = kamon.context.Context.key("requestId", "nonono")
-
+      val reqId = ctx.request.headers.find(_.name == "X-Request-ID").map(_.value).getOrElse("")
       val start = System.currentTimeMillis()
+//      val curContext = kamon.Kamon.currentContext().withTag("X-Request-ID", reqId)
+//      val scope = kamon.Kamon.storeContext(curContext)
       // 支持跨域访问
       val corsResponseHeaders = List(
         `Access-Control-Allow-Origin`.*,
@@ -40,6 +40,7 @@ object LogginReqDirectives extends LazyLogging {
 
           val d = System.currentTimeMillis() - start
           logger.info(s"${ctx.request.method.name} ${ctx.request.uri} response status: ${resp.status.intValue()}, took: ${d}ms")
+//          scope.close()
           resp.withHeaders(corsResponseHeaders)
           resp.withHeaders(RawHeader("X-Request-Id", reqId))
         } & handleRejections(RejectionHandlers.rejectionHandler) & handleExceptions(ExceptionHandlers.exceptionHandler)
