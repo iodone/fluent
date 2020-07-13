@@ -1,18 +1,15 @@
-package app.demo
+package app
 
 /**
   * Created by iodone on {19-11-13}.
   */
 
 import akka.actor.ActorSystem
-import core.Fluent
+import app.demo.delivery.http.HttpDelivery
 import common.Config
 import common.db.DatabaseMigration
+import core.Fluent
 import kamon.Kamon
-
-
-
-import app.demo.delivery.http.HttpDelivery
 
 object Demo {
 

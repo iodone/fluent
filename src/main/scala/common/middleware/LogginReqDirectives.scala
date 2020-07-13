@@ -1,13 +1,11 @@
 package common.middleware
 
-import java.util.UUID
 import java.util.concurrent.TimeUnit
 
 import akka.http.scaladsl.model.HttpMethods
 import akka.http.scaladsl.model.headers._
 import akka.http.scaladsl.server.Directives.{extractRequestContext, handleExceptions, handleRejections, mapResponse, respondWithHeaders}
 import com.typesafe.scalalogging.LazyLogging
-import kamon.context.Context
 import scala.concurrent.duration.FiniteDuration
 
 import common.handler._

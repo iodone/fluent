@@ -11,7 +11,7 @@ mkdir -p $THIS_DIR/../tmp
 start(){
     cd $THIS_DIR/../
     jar=`ls $THIS_DIR/../lib/`
-    nohup java -cp $THIS_DIR/../lib/$jar:$CONF_DIR rest.RestApp >> /dev/stdout 2>&1 &
+    nohup java -cp $THIS_DIR/../lib/$jar:$CONF_DIR app.Demo >> /dev/null 2>&1 &
     echo $! > $THIS_DIR/../var/run/pid
     echo "Starting service ... "
     cd -

@@ -109,7 +109,7 @@ assemblyMergeStrategy in assembly := {
 
 test in assembly := {}
 
-assemblyJarName in assembly := s"$name.jar"
+assemblyJarName in assembly := s"${name.value}.jar"
 
 excludeFilter in unmanagedResources := {
   val resource = ((resourceDirectory in Compile).value).getCanonicalPath
@@ -118,8 +118,7 @@ excludeFilter in unmanagedResources := {
 
 // scala package
 enablePlugins(UniversalPlugin)
-
-packageXzTarball := (baseDirectory in Compile).value / "output" / (name.value + ".tgz")
+// dist := (baseDirectory in Compile).value / "output" / (name.value + "xxxx.tgz")
 packageName in Universal := name.value
 
 // add config
@@ -128,16 +127,10 @@ mappings in Universal := {
 
   val confFile = buildEnv.value match {
     case BuildEnv.Developement => "application.conf"
-    case BuildEnv.Test => "resources-test/application-test.conf"
-    case BuildEnv.Production => "resources-prod/application-prod.conf"
+    case BuildEnv.Test => "application.test.conf"
+    case BuildEnv.Production => "application.prod.conf"
   }
   val resourcesPath = (resourceDirectory in Compile).value
-
-  val envPath = buildEnv.value match {
-    case BuildEnv.Test => "resources-test"
-    case BuildEnv.Production => "resources-prod"
-    case _ => ""
-  }
 
   val otherMappings = universalMappings :+ (resourcesPath / confFile) ->
     // main config file of application
@@ -177,6 +170,5 @@ mappings in Universal := {
 }
 
 // the bash scripts classpath only needs the fat jar
-
 scriptClasspath := Seq( (assemblyJarName in assembly).value )
 
