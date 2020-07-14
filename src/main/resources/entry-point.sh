@@ -8,4 +8,4 @@ mkdir -p $THIS_DIR/../var/log
 mkdir -p $THIS_DIR/../var/tmp
 
 # start
-exec "$@
+exec "$@"

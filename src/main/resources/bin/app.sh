@@ -34,7 +34,7 @@ migrate() {
     cd $THIS_DIR/../
     jar=`ls $THIS_DIR/../lib/`
     echo "Migrating database ... "
-    java -cp $THIS_DIR/../lib/$jar:$MIGRATION_DIR:$CONF_DIR -Duser.timezone=Asia/Shanghai rest.DbMigration
+    java -cp $THIS_DIR/../lib/$jar:$MIGRATION_DIR:$CONF_DIR -Duser.timezone=Asia/Shanghai app.DbMigration
     cd -
 }
 if [ "$1" = "start" ]

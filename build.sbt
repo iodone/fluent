@@ -6,7 +6,7 @@ version := "0.1.0"
 scalaVersion := "2.12.7"
 
 // for scala
-libraryDependencies ++= Seq(
+lazy val scalaDependencies = Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.5.26",
   "com.typesafe.akka" %% "akka-testkit" % "2.5.26" % Test,
   "com.typesafe.akka" %% "akka-http" % "10.1.11",
@@ -68,7 +68,7 @@ libraryDependencies ++= Seq(
 )
 
 // for java
-libraryDependencies ++= Seq(
+lazy val javayDependencies = Seq(
 
   // Migration for SQL databases
   "org.flywaydb" % "flyway-core" % "5.2.1",
@@ -95,80 +95,98 @@ libraryDependencies ++= Seq(
   "net.bytebuddy" % "byte-buddy-parent" % "1.9.12" pomOnly()
 )
 
-excludeDependencies ++= Seq(
-  // commons-logging is replaced by jcl-over-slf4j
-  ExclusionRule("org.slf4j", "slf4j-log4j12")
+
+lazy val assemblySettings = Seq(
+  assemblyJarName in assembly := s"${name.value}.jar",
+  assemblyMergeStrategy in assembly := {
+    case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+    case "reference.conf" => MergeStrategy.concat
+    case x => MergeStrategy.first
+  },
+  // shutdown unit test
+  test in assembly := {},
+  excludeFilter in unmanagedResources := {
+    val resource = ((resourceDirectory in Compile).value).getCanonicalPath
+    new SimpleFileFilter(_.getCanonicalPath startsWith resource)
+  }
 )
 
-// assembly
-assemblyMergeStrategy in assembly := {
-  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
-  case "reference.conf" => MergeStrategy.concat
-  case x => MergeStrategy.first
-}
+lazy val universalSettings = Seq(
+  packageName in Universal := name.value,
 
-test in assembly := {}
+  // add config
+  mappings in Universal := {
+    val universalMappings = (mappings in Universal).value
 
-assemblyJarName in assembly := s"${name.value}.jar"
+    val confFile = buildEnv.value match {
+      case BuildEnv.Developement => "application.conf"
+      case BuildEnv.Test => "application.test.conf"
+      case BuildEnv.Production => "application.prod.conf"
+    }
+    val resourcesPath = (resourceDirectory in Compile).value
 
-excludeFilter in unmanagedResources := {
-  val resource = ((resourceDirectory in Compile).value).getCanonicalPath
-  new SimpleFileFilter(_.getCanonicalPath startsWith resource)
-}
-
-// scala package
-enablePlugins(UniversalPlugin)
-// dist := (baseDirectory in Compile).value / "output" / (name.value + "xxxx.tgz")
-packageName in Universal := name.value
-
-// add config
-mappings in Universal := {
-  val universalMappings = (mappings in Universal).value
-
-  val confFile = buildEnv.value match {
-    case BuildEnv.Developement => "application.conf"
-    case BuildEnv.Test => "application.test.conf"
-    case BuildEnv.Production => "application.prod.conf"
-  }
-  val resourcesPath = (resourceDirectory in Compile).value
-
-  val otherMappings = universalMappings :+ (resourcesPath / confFile) ->
-    // main config file of application
-    "config/application.conf" :+
-    // add other config
-    (resourcesPath / "logback.xml") -> "config/logback.xml" :+
-    (resourcesPath / "supervisor.conf") -> "config/supervisor.conf" :+
-    // add dockfile
-    (resourcesPath / "Dockerfile") -> "Dockerfile" :+
-    // add bin file
-    (resourcesPath / "bin" / "app.sh") -> "bin/app.sh"
+    val otherMappings = universalMappings :+ (resourcesPath / confFile) ->
+      // main config file of application
+      "config/application.conf" :+
+      // add other config
+      (resourcesPath / "logback.xml") -> "config/logback.xml" :+
+      (resourcesPath / "supervisor.conf") -> "config/supervisor.conf" :+
+      // add dockfile
+//      (resourcesPath / "Dockerfile") -> "Dockerfile" :+
+      // add bin file
+      (resourcesPath / "bin" / "app.sh") -> "bin/app.sh" :+
+      (resourcesPath / "entry-point.sh") -> "bin/entry-point.sh"
     // here, add other file based on different env using envPath
+    import Path.relativeTo
 
-  import Path.relativeTo
+    // add migration config files
+    val migrationPath = (resourcesPath / "db" / "migration")
+    //  import Path.relativeTo
+    val migrationFinder = (migrationPath ** "*") filter { !_.isDirectory }
+    val migrationMappings = (migrationFinder.get pair relativeTo(migrationPath.getParentFile)) map {
+      case (file, path) => (file, s"migrate/db/${path}")
+    }
+    otherMappings ++ migrationMappings
+  },
 
-  // add migration config files
-  val migrationPath = (resourcesPath / "db" / "migration")
-  //  import Path.relativeTo
-  val migrationFinder = (migrationPath ** "*") filter { !_.isDirectory }
-  val migrationMappings = (migrationFinder.get pair relativeTo(migrationPath.getParentFile)) map {
-    case (file, path) => (file, s"migrate/db/${path}")
+  // add jar
+  mappings in Universal := {
+    // universalMappings: Seq[(File,String)]
+    val universalMappings = (mappings in Universal).value
+    val fatJar = (assembly in Compile).value
+    // removing means filtering
+    val filtered = universalMappings filter {
+      case (file, name) =>  ! name.endsWith(".jar")
+    }
+    // add the fat jar
+    filtered :+ (fatJar -> ("lib/" + fatJar.getName))
+  },
+  // the bash scripts classpath only needs the fat jar
+  scriptClasspath := Seq( (assemblyJarName in assembly).value )
+)
+
+lazy val dockerSettings = Seq(
+  dockerfile in docker := {
+    val appDir = stage.value
+    val targetDir = "/root/app/fluent"
+
+    new Dockerfile {
+      from("openjdk:8")
+      expose(9002)
+      copy(appDir, targetDir)
+      entryPoint(s"${targetDir}/bin/entry-point.sh")
+      cmd("java", "-cp", "/root/app/fluent/lib/fluent.jar:/root/app/fluent/config", "-Duser.timezone=Asia/Shanghai", "app.Demo", "2&1")
+    }
   }
-  otherMappings ++ migrationMappings
-}
+)
 
-// add jar
-mappings in Universal := {
-  // universalMappings: Seq[(File,String)]
-  val universalMappings = (mappings in Universal).value
-  val fatJar = (assembly in Compile).value
-  // removing means filtering
-  val filtered = universalMappings filter {
-    case (file, name) =>  ! name.endsWith(".jar")
-  }
-  // add the fat jar
-  filtered :+ (fatJar -> ("lib/" + fatJar.getName))
-}
-
-// the bash scripts classpath only needs the fat jar
-scriptClasspath := Seq( (assemblyJarName in assembly).value )
+lazy val rootProject = (project in file("."))
+  .settings(
+    assemblySettings,
+    libraryDependencies ++= scalaDependencies ++ javayDependencies
+  )
+  .enablePlugins(UniversalPlugin)
+  .settings(universalSettings)
+  .enablePlugins(sbtdocker.DockerPlugin)
+  .settings(dockerSettings)
 

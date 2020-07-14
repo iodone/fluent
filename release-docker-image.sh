@@ -2,6 +2,6 @@
 THIS_DIR=`dirname $(readlink -f $0)`
 
 sbt clean
-echo sbt build package ...
-sbt -Denv=${env} universal:packageZipTarball
-echo ${project_name}.tgz released
+echo sbt build image ...
+sbt -Denv=${env} docker
+echo image released ...
