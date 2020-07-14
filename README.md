@@ -66,10 +66,10 @@ bin/app.sh stop // 停止
 
 2.运行
 修改配置文件(容器里面有一份，可以先copy出来，作为模板), 存放到当前目录的var/config
-```bash
-// copy config file
+```shell
+## copy config file
 docker run -v `pwd`/backup:/backup --rm fluent/fluent cp -r /root/app/fluent/config /backup/
-// run docker
-docker run -p 9002:9002 -v `pwd`/var/config:/root/app/fluent/config  --rm fluent/fluent
+## run docker
+docker run --name fluent -p 9002:9002 -v `pwd`/var/config:/root/app/fluent/config  --rm fluent/fluent
 ```
 

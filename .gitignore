@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Maven template
 var/
+output/
 tasks/
 target/
 pom.xml.tag

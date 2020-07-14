@@ -174,8 +174,9 @@ lazy val dockerSettings = Seq(
       from("openjdk:8")
       expose(9002)
       copy(appDir, targetDir)
-      entryPoint(s"${targetDir}/bin/entry-point.sh")
-      cmd("java", "-cp", "/root/app/fluent/lib/fluent.jar:/root/app/fluent/config", "-Duser.timezone=Asia/Shanghai", "app.Demo", "2&1")
+      workDir(targetDir)
+      entryPoint(s"./bin/entry-point.sh")
+      cmd("java", "-cp", "./lib/fluent.jar:./config", "-Duser.timezone=Asia/Shanghai", "app.Demo", "2&1")
     }
   }
 )
