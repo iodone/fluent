@@ -1,7 +1,7 @@
 
 
 name := "fluent"
-version := "0.1.0"
+version := "0.2.0"
 
 scalaVersion := "2.12.7"
 
@@ -105,6 +105,7 @@ lazy val assemblySettings = Seq(
   },
   // shutdown unit test
   test in assembly := {},
+
   excludeFilter in unmanagedResources := {
     val resource = ((resourceDirectory in Compile).value).getCanonicalPath
     new SimpleFileFilter(_.getCanonicalPath startsWith resource)
@@ -184,6 +185,10 @@ lazy val dockerSettings = Seq(
 lazy val rootProject = (project in file("."))
   .settings(
     assemblySettings,
+    excludeDependencies ++= Seq(
+      // commons-logging is replaced by jcl-over-slf4j
+      ExclusionRule("org.slf4j", "slf4j-log4j12")
+    ),
     libraryDependencies ++= scalaDependencies ++ javayDependencies
   )
   .enablePlugins(UniversalPlugin)

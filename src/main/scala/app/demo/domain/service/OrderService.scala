@@ -1,4 +1,4 @@
-package app.demo.service
+package app.demo.domain.service
 
 /**
   * Created by iodone on {19-11-20}.

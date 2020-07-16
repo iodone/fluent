@@ -13,7 +13,7 @@ import io.circe.generic.auto._
 
 import core.Delivery
 import core.Router
-import app.demo.service._
+import app.demo.domain.service._
 import app.demo.repositry._
 import app.demo.delivery.http.router._
 import common.middleware.LogginReqDirectives._

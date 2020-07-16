@@ -4,15 +4,8 @@ Fluent是基于Akka-HTTP实现的一个HTTP服务框架。为Scala新手提供�
 ## Design Philosophy
 遵循 《clean architechture》的宗旨，参见 《try clean architecture on Golang》
 
-框架具体设计和实现参考：
-https://github.com/bxcodec/go-clean-arch
-https://github.com/ArchDev/akka-http-rest
-https://github.com/mDialog/smoke
-https://github.com/lihaoyi/cask
-https://github.com/akka-fusion/akka-fusion
-https://github.com/iodone/caliban
-
 ## Clean Architecture 
+![image](./doc/assets/CleanArchitecture.jpg)
 ![image](./doc/assets/clean-arch.png)
 
 ## Quickstart
@@ -72,4 +65,14 @@ docker run -v `pwd`/backup:/backup --rm fluent/fluent cp -r /root/app/fluent/con
 ## run docker
 docker run --name fluent -p 9002:9002 -v `pwd`/var/config:/root/app/fluent/config  --rm fluent/fluent
 ```
+## Reference
 
+框架具体设计和实现参考：
+https://github.com/bxcodec/go-clean-arch
+https://github.com/ArchDev/akka-http-rest
+https://github.com/mDialog/smoke
+https://github.com/lihaoyi/cask
+https://github.com/akka-fusion/akka-fusion
+https://github.com/iodone/caliban
+https://github.com/pauljamescleary/scala-pet-store
+https://github.com/howiehu/ddd-architecture-samples
