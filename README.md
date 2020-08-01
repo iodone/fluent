@@ -9,7 +9,7 @@ Fluent是基于Akka-HTTP实现的一个HTTP服务框架。为Scala新手提供�
 ![image](./doc/assets/clean-arch.png)
 
 ## Quickstart
-https://github.com/finagle/finch
+
 
 ## Deploy
 
@@ -68,11 +68,12 @@ docker run --name fluent -p 9002:9002 -v `pwd`/var/config:/root/app/fluent/confi
 ## Reference
 
 框架具体设计和实现参考：
-https://github.com/bxcodec/go-clean-arch
-https://github.com/ArchDev/akka-http-rest
-https://github.com/mDialog/smoke
-https://github.com/lihaoyi/cask
-https://github.com/akka-fusion/akka-fusion
-https://github.com/iodone/caliban
-https://github.com/pauljamescleary/scala-pet-store
-https://github.com/howiehu/ddd-architecture-samples
+1. https://github.com/bxcodec/go-clean-arch
+2. https://github.com/ArchDev/akka-http-rest
+3. https://github.com/mDialog/smoke
+4. https://github.com/lihaoyi/cask
+5. https://github.com/akka-fusion/akka-fusion
+6. https://github.com/iodone/caliban
+7. https://github.com/pauljamescleary/scala-pet-store
+8. https://github.com/howiehu/ddd-architecture-samples
+9. https://github.com/finagle/finch
