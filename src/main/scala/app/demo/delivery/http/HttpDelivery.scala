@@ -8,13 +8,13 @@ import scala.concurrent.ExecutionContext
 import akka.http.scaladsl.model.{ContentTypes, HttpEntity, HttpMethods}
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
+
+import app.demo.application.OrderAppService
 import io.circe.generic.auto._
-
-
 import core.Delivery
 import core.Router
 import app.demo.domain.service._
-import app.demo.repositry._
+import app.demo.gateways.repositry._
 import app.demo.delivery.http.router._
 import common.middleware.LogginReqDirectives._
 
@@ -28,7 +28,8 @@ case class HttpDelivery(implicit ec: ExecutionContext) extends Delivery[Route] {
   // DI
   import com.softwaremill.macwire._
   lazy val ordeRepo = wire[OrderRepositryImp]
-  lazy val os = wire[OrderServiceImp]
+  lazy val os = wire[PlaceOrderAppService]
+  lazy val oas = wire[OrderAppService]
   lazy val or = wire[OrderRouter]
 
 

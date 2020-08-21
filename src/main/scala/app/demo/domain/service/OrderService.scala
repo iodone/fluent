@@ -4,27 +4,18 @@ package app.demo.domain.service
   * Created by iodone on {19-11-20}.
   */
 
-import scala.concurrent.{Future, ExecutionContext}
+import com.typesafe.scalalogging.LazyLogging
+import scala.concurrent.{ExecutionContext, Future}
 
+import app.demo.domain.repositry.OrderRepositry
+import core.Entity.Id
 import app.demo.domain.Entity._
-import app.demo.domain.interface._
-import core.Service
 
-class OrderServiceImp(orderRepo: OrderRepositry)(implicit ec: ExecutionContext) extends OrderService with Service {
+class PlaceOrderAppService(orderRepo: OrderRepositry)(implicit ec: ExecutionContext) extends LazyLogging {
 
-  def saveOrder(orderId: Id, items: List[Item]): Future[Id] = {
+  def place(order: Order): Future[Id] = {
     logger.info("test===========")
-    val order = OrderSchema(0, orderId, "order1")
-    for {
-      orderId <- orderRepo.save(order)
-      _ <- orderRepo.save(items.map(x => new ItemSchema(0, x.id, orderId, x.name)))
-    } yield orderId
-  }
-
-  def fetchItem(id: Id): Future[Option[Item]] = {
-    orderRepo.fetchItem(id).map { x =>
-      x.map(i => Item(i.id, i.name))
-    }
+    orderRepo.save(order)
   }
 
 }

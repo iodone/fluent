@@ -12,19 +12,18 @@ import io.circe.generic.auto._
 import io.circe.parser._
 
 import scala.concurrent.{Future, Promise}
-
 import app.BaseServiceTest
+import app.demo.application.OrderAppService
 import app.demo.domain.Entity._
+import core.Entity._
 import core.ResponseEntity._
-
-import app.demo.domain.interface._
 
 class OrderRouteSpec extends BaseServiceTest {
 
   "OrderRoute" when {
     "POST /order/save" should {
       "return 200 if save successful" in new Context {
-        val order0 = Order(1L, List(Item(1, "shoe"), Item(2, "wear")))
+        val order0 = Order(1L, "orderName", List(Item(1, "shoe"), Item(2, "wear")))
         when(orderService.saveOrder(order0.id, order0.items)).thenReturn(Promise.successful(1L).future)
 
         val reqEntity = HttpEntity(MediaTypes.`application/json`, order0.asJson.noSpaces)
@@ -40,7 +39,7 @@ class OrderRouteSpec extends BaseServiceTest {
 
       "return 500 if sava faild" in new Context {
 
-        val order0 = Order(1L, List(Item(1, "shoe"), Item(2, "wear")))
+        val order0 = Order(1L, "orderName", List(Item(1, "shoe"), Item(2, "wear")))
         when(orderService.saveOrder(order0.id, order0.items)).thenReturn(Future.failed(new Exception("Save Failed")))
 
         val reqEntity = HttpEntity(MediaTypes.`application/json`, order0.asJson.toString)
@@ -80,7 +79,7 @@ class OrderRouteSpec extends BaseServiceTest {
   }
 
   trait Context {
-    val orderService = mock[OrderService]
+    val orderService = mock[OrderAppService]
     val orderRoute = new OrderRouter(orderService).routes
   }
 }

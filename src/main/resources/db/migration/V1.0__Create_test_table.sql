@@ -1,7 +1,6 @@
 CREATE TABLE `order_t` (
   `id` integer AUTO_INCREMENT COMMENT 'auto inc id',
   `name` varchar(255) NOT NULL DEFAULT '' COMMENT 'order name' ,
-  `order_id` integer NOT NULL DEFAULT 0 COMMENT 'order id' ,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
@@ -10,7 +9,6 @@ CREATE TABLE `order_t` (
 
 CREATE TABLE `item_t` (
   `id` integer   AUTO_INCREMENT COMMENT 'auto inc id',
-  `item_id` integer NOT NULL DEFAULT  0 COMMENT 'item id',
   `order_id` integer NOT NULL DEFAULT 0 COMMENT 'order autoinc id' ,
   `name` varchar(255) NOT NULL DEFAULT '' COMMENT 'item name' ,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

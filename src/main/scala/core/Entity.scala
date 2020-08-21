@@ -3,6 +3,10 @@ package core
 /**
   * Created by iodone on {20-6-23}.
   */
+object Entity {
+    type Id = Long
+}
+
 trait Entity
 
 object ResponseEntity {
